@@ -2,7 +2,6 @@
 
 ```sh
 
-go to the folder "laravel"
 add database
 composer install
 cp example.env .env
