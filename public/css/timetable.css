@@ -1,0 +1,39 @@
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+ul.parsley-errors-list {
+    padding: 0px;
+    padding-top: 5px;
+}
+ul.parsley-errors-list li {
+    list-style: none;
+    color:red;
+}
+.parsley-error{
+    border: 1px red solid !important;
+}
+.parsley-success{
+    border: 1px green solid !important;
+}
+.mt30{
+    margin-top: 25px;
+}
+.fc-event {
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+
+}
+.panel{
+    border: none!important;
+}
+.panel-primary{
+border-color: unset!important;
+}
+.loader{
+    position: absolute;
+    margin-left: 40%;
+    z-index: 9999;
+}

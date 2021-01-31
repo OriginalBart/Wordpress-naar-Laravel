@@ -1,0 +1,175 @@
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+
+.is-dashboard {
+    .container-fluid:first-of-type {
+        padding-right: 0;
+        padding-left: 0
+    }
+
+    .fa-2x {
+        font-size: 2em;
+    }
+
+    .fa {
+        position: relative;
+        display: table-cell;
+        width: 60px;
+        height: 36px;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 20px;
+    }
+
+    .main-menu:hover {
+        width: 250px;
+    }
+
+    .main-menu {
+        background: #212121;
+        border-right: 1px solid #e5e5e5;
+        min-height: 100%;
+        height: 100vh;
+        width: 60px;
+        overflow: hidden;
+        transition: width 0.05s linear;
+        -webkit-transform: translateZ(0) scale(1, 1);
+        z-index: 1000;
+        position: relative;
+
+        > ul {
+            margin: 7px 0;
+        }
+
+        li {
+            position: relative;
+            display: block;
+            width: 250px;
+
+            > a {
+                position: relative;
+                display: table;
+                border-collapse: collapse;
+                border-spacing: 0;
+                color: #999;
+                font-family: sans-serif;
+                font-size: 14px;
+                text-decoration: none;
+                -webkit-transform: translateZ(0) scale(1, 1);
+                -webkit-transition: all .1s linear;
+                transition: all .1s linear;
+            }
+        }
+
+        .nav-icon {
+            position: relative;
+            display: table-cell;
+            width: 60px;
+            height: 36px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 18px;
+        }
+
+        .nav-text {
+            position: relative;
+            display: table-cell;
+            vertical-align: middle;
+            width: 190px;
+            font-family: 'Titillium Web', sans-serif;
+        }
+
+        > ul.logout {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+
+    .no-touch .scrollable.hover {
+        overflow-y: hidden;
+
+        &:hover {
+            overflow-y: auto;
+            overflow: visible;
+        }
+    }
+
+    a {
+        &:hover, &:focus {
+            text-decoration: none;
+        }
+    }
+
+    nav {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+
+        ul, li {
+            outline: 0;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .main-menu li:hover > a, nav.main-menu li.active > a {
+        color: #fff;
+        background-color: #5fa2db;
+    }
+
+    .dropdown-menu > {
+        li > a {
+            &:hover, &:focus {
+                color: #fff;
+                background-color: #5fa2db;
+            }
+        }
+
+        .active > a {
+            color: #fff;
+            background-color: #5fa2db;
+
+            &:hover, &:focus {
+                color: #fff;
+                background-color: #5fa2db;
+            }
+        }
+    }
+
+    .no-touch .dashboard-page nav.dashboard-menu ul li:hover a, .dashboard-page nav.dashboard-menu ul li.active a {
+        color: #fff;
+        background-color: #5fa2db;
+    }
+
+    .dashboard-content {
+        float: left;
+        width: 100%;
+        height: 100%;
+
+        .placeholder {
+            background: #ebebeb;
+            display: block;
+            padding: 30px 25px 10px 25px;
+            -khtml-border-radius: 3px;
+            border-radius: 3px;
+            text-align: center;
+            margin-bottom: 20px;
+            min-height: 140px;
+
+            p {
+                background: #ebebeb;
+                display: block;
+                padding: 30px 25px 10px 25px;
+                -khtml-border-radius: 3px;
+                border-radius: 3px;
+                text-align: center;
+                margin-bottom: 20px;
+                min-height: 140px;
+            }
+        }
+    }
+}

@@ -1,0 +1,64 @@
+/*----------------------------------------------------------------------------*\
+    Vars
+\*----------------------------------------------------------------------------*/
+
+/*  Variables
+\*----------------------------------------------------------------------------*/
+
+$base-font-size: 1.6rem;
+$base-line-height: 2.4rem;
+$base-font-weight: 400;
+
+$container-width: 120rem; // Bootstrap container width ( minus gutter width )
+$gutter-width: 3rem; // Bootstrap gutter width / 3em/2 = 1.5 rem padding each column
+
+/* breakpoints */
+$breakpoints: (
+    "xs" "(max-width: 576px)",
+    "sm" "(min-width: 576px)",
+    "md" "(min-width: 768px)",
+    "lg" "(min-width: 992px)",
+    "xl" "(min-width: 1200px)",
+    "lap" "(min-width: 1025px) and (max-width: 1450px)"
+);
+
+/* helpers */
+$use-helpers: false;
+$breakpoint-has-helpers: ("xs", "sm", "md", "lg", "xl", "lap");
+
+$use-spacing-helpers: false; // Loop through $breakpoint-has-spacing-helpers breakpoints and create p-t-5--md and p-l-40--xs ...
+$spacing-steps-amount: 20; /* amount = * 5 */
+$breakpoint-has-spacing-helpers: ("xs", "sm", "md", "lg");
+
+$use-color-helpers: true; // Loop through colors array below and creates the bg--, color-- and fill-- classes
+
+/* Modules */
+$use-buttons: true;
+
+/* fixed ratio */
+$use-fixedratio: false;
+
+/* images */
+$use-image: false;
+$breakpoint-has-images: ("xs", "sm", "md", "lg", "lap");
+
+/*----------------------------------------------------------------------------*\
+    $TYPOGRAPHY
+\*----------------------------------------------------------------------------*/
+
+$fontsize-xl: 4.2rem;
+$fontsize-l: 2.6rem;
+$fontsize-m: $base-font-size;
+$fontsize-s: 1.4rem;
+
+$font-base: "Museo", sans-serif;
+$font-heading: "Museo", sans-serif;
+
+/*----------------------------------------------------------------------------*\
+    $COLORS
+\*----------------------------------------------------------------------------*/
+
+$colors: (
+    primary: #35cbbf,
+    secondary: #ffffff
+);
